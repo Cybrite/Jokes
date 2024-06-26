@@ -20,14 +20,12 @@ function App() {
       <h1>how to integrate backend and frontend</h1>
       <p>JOKES : {jokes.length}</p>
 
-      {jokes.map((joke) => {
-        return (
-          <div key={joke.id}>
-            <h4>{joke.setup}</h4>
-            <p>{joke.punchline}</p>
-          </div>
-        );
-      })}
+      {jokes.map((joke) => (
+        <div key={joke.id}>
+          <h4>{joke.setup}</h4>
+          <p>{joke.punchline}</p>
+        </div>
+      ))}
     </>
   );
 }
